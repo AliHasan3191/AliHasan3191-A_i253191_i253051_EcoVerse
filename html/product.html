@@ -1,175 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoverse – Product List</title>
+<html>
+  <head>
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
 
-    <link rel="stylesheet" href="../css/product.css">
-</head>
+  <body>
+  
+    <div class="navbar">
+      <div class="left-side">
+        <img src="../images/logo.png" class="logo" />
+      </div>
 
-<body>
+      <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
 
-    <!-- ============================
-         NAVBAR
-    ============================== -->
-    <nav class="navbar" style="background:#0c6417; padding:15px 40px; display:flex; align-items:center; justify-content:space-between;">
-        
-        <div style="display:flex; align-items:center; gap:20px;">
-            <img src="logo.png" style="width:150px;">
-            <a href="#" style="color:white; text-decoration:none;">Home</a>
-            <a href="#" style="color:white; text-decoration:none;">Product</a>
-            <a href="#" style="color:white; text-decoration:none;">Contact us</a>
-            <a href="#" style="color:white; text-decoration:none;">About</a>
+      <div class="right-side">
+        <img src="../images/heart.png" class="icon" />
+        <div class="cart-box">
+          <img src="../images/cart.png" class="icon" />
+          <span class="cart-count">3</span>
+        </div>
+        <input type="text" placeholder="search..." class="search" />
+      </div>
+    </div>
+  
+
+    <div class="container">
+      <h2 class="heading">Eco Friendly Products</h2>
+
+      <div class="filter-box">
+        <img src="../images/filter.png" class="filter-icon" />
+
+        <div class="filter-menu">
+          <p>Price</p>
+          <p>Rating</p>
+          <p>Latest</p>
+          <p>Oldest</p>
+        </div>
+      </div>
+
+ 
+      <div class="products">
+
+        <div class="card">
+          <img src="../images/bottle.jpg" class="pimg" />
+          <h3>Glass Water Bottle</h3>
+          <p>Price: 150 PKR</p>
+          <p class="stock">Stock Available</p>
+          <button class="add-btn">Add to Cart</button>
         </div>
 
-        <div style="display:flex; align-items:center; gap:20px;">
-            <img src="heart.png" style="width:23px;">
-            <img src="cart.png" style="width:23px;">
-            <input type="text" placeholder="search..." style="padding:8px 15px; border-radius:20px; border:none; width:180px;">
+            <div class="card">
+          <img src="../images/lamp.jpg" class="pimg" />
+          <h3>Solar Charged Lamp</h3>
+          <p>Price: 57 PKR</p>
+          <p class="outstock">Out of Stock</p>
+          <button class="add-btn">Add to Cart</button>
         </div>
 
-    </nav>
-
-    <!-- ============================
-         PRODUCT LIST
-    ============================== -->
-    <section class="products-section">
-
-        <!-- Title + Filter -->
-        <div class="products-header">
-            <h2 class="products-title">Eco Friendly Products</h2>
-
-            <div class="filter-box">
-                <img src="filter.png" class="filter-icon">
-
-                <div class="filter-menu">
-                    <p>Price</p>
-                    <p>Rating</p>
-                    <p>Latest</p>
-                    <p>Oldest</p>
-                </div>
-            </div>
+            <div class="card">
+          <img src="../images/bowl.jpg" class="pimg" />
+          <h3>Coconut Bowl</h3>
+          <p>Price: 130 PKR</p>
+          <p class="stock">Stock Available</p>
+          <button class="add-btn">Add to Cart</button>
         </div>
 
-        <!-- ============================
-             PRODUCT GRID
-        ============================== -->
-        <div class="products-grid">
-
-            <!-- Product Card -->
-            <div class="product-card">
-                <img src="bottle.jpg" class="pimg">
-                <p class="pname">Glass Water Bottle</p>
-                <p class="pprice">Price: 150 PKR</p>
-                <p class="stock green">Stock Available</p>
-                <button class="add-btn green">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="solar-lamp.jpg" class="pimg">
-                <p class="pname">Solar Charged Lamp</p>
-                <p class="pprice">Price: 57 PKR</p>
-                <p class="stock red">Out of Stock</p>
-                <button class="add-btn red">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="coconut-bowl.jpg" class="pimg">
-                <p class="pname">Coconut Bowl</p>
-                <p class="pprice">Price: 130 PKR</p>
-                <p class="stock green">Stock Available</p>
-                <button class="add-btn green">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="soap.jpg" class="pimg">
-                <p class="pname">Coconut Soap</p>
-                <p class="pprice">Price: 180 PKR</p>
-                <p class="stock red">Out of Stock</p>
-                <button class="add-btn red">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="cutlery.jpg" class="pimg">
-                <p class="pname">Bamboo Cutlery Travel Set</p>
-                <p class="pprice">Price: 20 PKR</p>
-                <p class="stock green">Stock Available</p>
-                <button class="add-btn green">Add to Cart</button>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="product-card">
-                <img src="brush.jpg" class="pimg">
-                <p class="pname">Bamboo Brushes</p>
-                <p class="pprice">Price: 200 PKR</p>
-                <p class="stock red">Out of Stock</p>
-                <button class="add-btn red">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="dish-sponge.jpg" class="pimg">
-                <p class="pname">Compostable Dish Sponge</p>
-                <p class="pprice">Price: 300 PKR</p>
-                <p class="stock green">Stock Available</p>
-                <button class="add-btn green">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="trash-bag.jpg" class="pimg">
-                <p class="pname">Compostable Trash Bag</p>
-                <p class="pprice">Price: 80 PKR</p>
-                <p class="stock green">Stock Available</p>
-                <button class="add-btn green">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="cutlery-set.jpg" class="pimg">
-                <p class="pname">Bamboo Cutlery Travel Set</p>
-                <p class="pprice">Price: 20 PKR</p>
-                <p class="stock green">Stock Available</p>
-                <button class="add-btn green">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="steel-straws.jpg" class="pimg">
-                <p class="pname">Steel Straws Set</p>
-                <p class="pprice">Price: 250 PKR</p>
-                <p class="stock green">Stock Available</p>
-                <button class="add-btn green">Add to Cart</button>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ============================
-         FOOTER
-    ============================== -->
-    <footer style="background:#0c6417; color:white; padding:40px 50px; margin-top:40px; display:flex; justify-content:space-between;">
-
-        <div>
-            <h3>Quick links</h3>
-            <p>FAQs</p>
-            <p>Privacy Policy</p>
-            <p>Terms and conditions</p>
-            <p>Returns</p>
+            <div class="card">
+          <img src="../images/soap.jpg" class="pimg" />
+          <h3>Coconut Soap</h3>
+          <p>Price: 180 PKR</p>
+          <p class="outstock">Out of Stock</p>
+          <button class="add-btn">Add to Cart</button>
         </div>
 
-        <div>
-            <h3>Contact Us</h3>
-            <p>contact@ecoveese.com</p>
-            <p>+92 300 0000000</p>
-            <p>Islamabad G 13/2</p>
+            <div class="card">
+          <img src="../images/wrap.jpg" class="pimg" />
+          <h3>Bamboo Cutlery Travel Set</h3>
+          <p>Price: 20 PKR</p>
+          <p class="stock">Stock Available</p>
+          <button class="add-btn">Add to Cart</button>
         </div>
 
-        <div>
-            <h3>Social</h3>
-            <p>/ecoverse</p>
-            <p>/ecoverse</p>
-            <p>/ecoverse_store</p>
+            <div class="card">
+          <img src="../images/brushes.jpg" class="pimg" />
+          <h3>Bamboo Brushes</h3>
+          <p>Price: 200 PKR</p>
+          <p class="outstock">Out of Stock</p>
+          <button class="add-btn">Add to Cart</button>
         </div>
 
-    </footer>
+            <div class="card">
+          <img src="../images/sponge.jpg" class="pimg" />
+          <h3>Compostable Dish Sponge</h3>
+          <p>Price: 300 PKR</p>
+          <p class="stock">Stock Available</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
 
-</body>
+            <div class="card">
+          <img src="../images/bag.jpg" class="pimg" />
+          <h3>Compostable Trash Bag</h3>
+          <p>Price: 80 PKR</p>
+          <p class="stock">Stock Available</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+            <div class="card">
+          <img src="../images/cutlery.jpg" class="pimg" />
+          <h3>Bamboo Cutlery Set</h3>
+          <p>Price: 90 PKR</p>
+          <p class="stock">Stock Available</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+
+    
+        <div class="card">
+          <img src="../images/straw.jpg" class="pimg" />
+          <h3>Bamboo Straws</h3>
+          <p>Price: 250 PKR</p>
+          <p class="stock">Stock Available</p>
+          <button class="add-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="footer-section">
+        <h3>Quick links</h3>
+        <p>FAQs</p>
+        <p>Privacy Policy</p>
+        <p>Terms and conditions</p>
+        <p>Returns</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>contact@ecoverese.com</p>
+        <p>+92 300 0000000</p>
+        <p>Islamabad G 13/2</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow us</h3>
+        <p><img src="../images/insta2.png" class="sicon" /> Instagram</p>
+        <p><img src="../images/facebook2.png" class="sicon" /> Facebook</p>
+        <p><img src="../images/x.png" class="sicon" /> X</p>
+      </div>
+    </div>
+    <script>
+      let filterIcon = document.querySelector(".filter-icon");
+      let filterMenu = document.querySelector(".filter-menu");
+
+   
+      filterMenu.style.display = "none";
+
+      filterIcon.onclick = function () {
+        if (filterMenu.style.display === "none") {
+          filterMenu.style.display = "block";
+        } else {
+          filterMenu.style.display = "none";
+        }
+      };
+    </script>
+  </body>
 </html>

@@ -1,139 +1,103 @@
-/* product.css – beginner friendly */
-
-/* Reset */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    font-family: Arial;
+    user-select: none;
 }
 
-/* =============================
-    PRODUCT SECTION
-============================= */
-
-.products-section {
-    padding: 20px 40px;
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
 }
 
-/* ====== TITLE + FILTER ====== */
-
-.products-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.heading {
+    margin-left: 10px;
     margin-bottom: 25px;
 }
 
-.products-title {
-    font-size: 26px;
-    margin: 0;
-}
-
-/* Filter Icon Container */
 .filter-box {
-    position: relative;
-    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 80px;
 }
 
 .filter-icon {
     width: 22px;
+    cursor: pointer;
 }
 
-/* Dropdown */
 .filter-menu {
     position: absolute;
-    top: 30px;
+    top: 28px;        /* menu opens UNDER the icon */
     right: 0;
-    background: #ffffff;
+    background: #fff;
+    padding: 8px 12px;
     border-radius: 6px;
-    padding: 10px 15px;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 4px #ccc;
     display: none;
 }
 
-.filter-box:hover .filter-menu {
-    display: block;
-}
-
 .filter-menu p {
-    margin: 6px 0;
+    margin: 5px 0;
     font-size: 14px;
     cursor: pointer;
 }
 
-/* =============================
-    PRODUCT GRID
-============================= */
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 25px;
+.filter-menu p:hover {
+    color: #0d5c17;
 }
 
-/* Card */
-.product-card {
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
     background: white;
-    border-radius: 10px;
-    padding: 12px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.15);
 }
 
 .pimg {
     width: 100%;
-    border-radius: 10px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-.pname {
+.card h3 {
     font-size: 15px;
-    margin: 8px 0 4px 0;
+    margin: 8px 0;
 }
 
-.pprice {
+.card p {
+    margin: 3px 0;
     font-size: 14px;
-    margin: 2px 0;
 }
 
 .stock {
-    font-size: 13px;
-    margin-top: 3px;
     color: green;
 }
 
-/* Red text for out of stock */
-.stock.red {
+.outstock {
     color: red;
 }
 
-/* Add to cart buttons */
 .add-btn {
     width: 100%;
-    border: none;
-    padding: 8px 0;
-    border-radius: 5px;
     margin-top: 10px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
     color: white;
-    cursor: pointer;
-    font-size: 14px;
-    background: #b33d3d; /* default red button */
-}
-
-/* Green version for available stock */
-.add-btn.green {
     background: #0c6417;
+    cursor: pointer;
 }
 
-/* =============================
-    RESPONSIVE
-============================= */
-
-@media (max-width: 768px) {
-    .products-section {
-        padding: 20px;
-    }
-
-    .products-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-}
