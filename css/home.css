@@ -1,0 +1,129 @@
+/* home.css - responsive beginner-friendly */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ============================
+   HERO SECTION
+   ============================ */
+
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    flex-wrap: wrap;            /* makes it wrap for small screens */
+}
+
+.hero-left {
+    flex: 1;
+    min-width: 260px;
+}
+
+.hero-logo {
+    width: 230px;
+    max-width: 80%;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #0c6417;
+}
+
+.shop-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 2px solid #0c6417;
+    border-radius: 25px;
+    color: #0c6417;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.shop-btn:hover {
+    background: #0c6417;
+    color: white;
+}
+
+.hero-right {
+    flex: 1;
+    text-align: right;
+    min-width: 260px;
+}
+
+.earth-img {
+    width: 70%;
+    max-width: 380px;
+}
+
+/* ============================
+   PRODUCT TITLE
+   ============================ */
+
+.products-title {
+    font-size: 26px;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+/* ============================
+   PRODUCT CARDS
+   ============================ */
+
+.products-row {
+    display: flex;
+    flex-wrap: wrap;        /* makes them wrap instead of centering */
+    gap: 20px;
+    padding: 20px 45px;
+    justify-content: flex-start;  /* forces first item to stay left */
+}
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    width: 230px;            /* fixed but responsive in wrap */
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+.pimg {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.pname {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.pprice {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.stock {
+    font-size: 13px;
+    color: green;
+}
+
+.stock.red {
+    color: red;
+}
+
+.add-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #c0392b;
+    cursor: pointer;
+}
+
+.add-btn.green {
+    background: #0c6417;
+}
