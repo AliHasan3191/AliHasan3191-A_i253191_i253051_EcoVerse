@@ -4,18 +4,12 @@
     box-sizing: border-box;
 }
 
- .header{
-   padding: 20px;
-   margin-left: 20px;
- }
-
 body {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
     padding: 40px;
 }
 .container {
-    padding: 30px;
     display: flex;
     gap: 40px;
     width: 100%;
@@ -130,9 +124,6 @@ button {
     margin-right: auto;
     display: block;
 }
-
-
-
 .faq-component {
     padding: 20px;
 }

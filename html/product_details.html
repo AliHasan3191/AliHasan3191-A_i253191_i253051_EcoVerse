@@ -2,8 +2,39 @@
 <html>
 <head>
     <link rel="stylesheet" href="\css\product_detail.css">
+       <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar2.css">
+
 </head>
 <body>
+
+<div class="navbar">
+
+    <div class="left-side">
+        <img src="../images/logo.png" class="logo">
+    </div>
+
+    <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="right-side">
+        <img src="../images/heart.png" class="icon">
+        <a href="cart.html">
+        <div class="cart-box">
+            <img src="../images/cart.png" class="icon">
+            <span class="cart-count">3</span>
+        </div>
+        </a>
+        <a href="product.html">
+        <input type="text" placeholder="Glass Water Bottle" class="searchbox" />
+        </a>
+    </div>
+
+</div>
 
 <div class="container">
 
@@ -18,7 +49,7 @@
         </div>
     </div>
 
-    <div class="right-side">
+    <div class="right-side-p">
         <h2>Bamboo Brushes</h2>
         <p class="category">Category: Daily product</p>
         <p class="price">Price: 200 PKR</p>
@@ -45,15 +76,14 @@
     
 </div>
 <div class="reviews-specs-container">
-    <!-- Reviews Section -->
     <div class="reviews-section">
         <h2>Reviews</h2>
 
-        <!-- Review Card 1 -->
+  
         <div class="review-card">
             <div class="review-header">
                 <div class="review-user">
-                    <img src="user1.jpg" alt="User image">
+                    <img src="\images\man.jpg" alt="User image">
                     <div>
                         <h4>irtaza</h4>
                         <span class="date">15/11/2025</span>
@@ -61,16 +91,16 @@
                 </div>
                 <div class="stars">★★★★★</div>
             </div>
+
             <p class="review-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ips.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sequi, hic, vel reprehenderit distinctio itaque esse praesentium eligendi est eaque quae aliquid mollitia modi voluptas culpa repellendus consequatur nobis error!
             </p>
         </div>
 
-        <!-- Review Card 2 -->
         <div class="review-card">
             <div class="review-header">
                 <div class="review-user">
-                    <img src="user2.jpg" alt="User image">
+                    <img src="\images\man.jpg" alt="User image">
                     <div>
                         <h4>Ali</h4>
                         <span class="date">13/11/2025</span>
@@ -79,12 +109,11 @@
                 <div class="stars">★★★★☆</div>
             </div>
             <p class="review-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ips.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, enim totam distinctio qui at cum velit, incidunt dolorem rem ipsam blanditiis ullam dolore. Aperiam rerum necessitatibus repellendus similique quam hic?
             </p>
         </div>
     </div>
 
-    <!-- Specifications -->
     <div class="spec-section">
         <h2>Specifications</h2>
 
@@ -109,6 +138,91 @@
         </div>
     </div>
 </div>
+
+<h2 class="product-details">Product Details</h2>
+<div class="container">
+
+
+
+     <div class="card">
+          <a href="product_details.html">
+            <img src="../images/lamp.jpg" class="pimg" />
+          </a>
+          <h3>Solar Charged Lamp</h3>
+          <p>Price: 57 PKR</p>
+          <p class="outstock">Out of Stock</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="product_details.html">
+            <img src="../images/bowl.jpg" class="pimg" />
+          </a>
+          <h3>Coconut Bowl</h3>
+          <p>Price: 130 PKR</p>
+          <p class="stock">Stock Available</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="product_details.html">
+            <img src="../images/soap.jpg" class="pimg" />
+          </a>
+          <h3>Coconut Soap</h3>
+          <p>Price: 180 PKR</p>
+          <p class="outstock">Out of Stock</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="product_details.html">
+            <img src="../images/wrap.jpg" class="pimg" />
+          </a>
+          <h3>Bamboo Cutlery Travel Set</h3>
+          <p>Price: 20 PKR</p>
+          <p class="stock">Stock Available</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+</div>
+
+
+
+
+    <div class="footer">
+      <div class="footer2">
+        <h3>Quick links</h3>
+        <p>FAQs</p>
+        <p>Privacy Policy</p>
+        <p>Terms and conditions</p>
+        <p>Returns</p>
+      </div>
+
+      <div class="footer2">
+        <h3>Contact Us</h3>
+        <p>contact@ecoverese.com</p>
+        <p>+92 300 0000000</p>
+        <p>Islamabad G 13/2</p>
+      </div>
+
+      <div class="footer2">
+        <h3>Follow us</h3>
+        <p><img src="../images/insta2.png" class="icon2" /> Instagram</p>
+        <p><img src="../images/facebook2.png" class="icon2" /> Facebook</p>
+        <p><img src="../images/x.png" class="icon2" /> X</p>
+      </div>
+    </div>
+
+
+</div>
+
 
 
 </body>

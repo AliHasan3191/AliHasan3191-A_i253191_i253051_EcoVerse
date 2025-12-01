@@ -133,9 +133,13 @@ input::placeholder {
     height: 24px;
 }
 
+
+
 .signin-btn {
     width: 70%;
+    text-decoration: none;
     padding: 14px;
+    cursor: pointer;
     background: #1B5E20;
     color: #ffffff;
     border: none;

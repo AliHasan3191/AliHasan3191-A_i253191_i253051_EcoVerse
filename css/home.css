@@ -1,20 +1,19 @@
-/* home.css - responsive beginner-friendly */
+
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+     user-select: none;
 }
 
-/* ============================
-   HERO SECTION
-   ============================ */
 
 .hero-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 50px;
-    flex-wrap: wrap;            /* makes it wrap for small screens */
+    margin: -1px;
+    padding: 20px 50px 10px;
+    flex-wrap: wrap;            
 }
 
 .hero-left {
@@ -35,14 +34,20 @@ body {
 
 .shop-btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-right: 125px;
     padding: 10px 25px;
     border: 2px solid #0c6417;
-    border-radius: 25px;
+    border-radius: 20px;
     color: #0c6417;
     text-decoration: none;
-    transition: 0.2s;
+    font-size: 16px;
+    margin-top: 20px;
 }
+.right-btn {
+    margin-top: 15px; 
+    align-self: flex-end;       
+}
+
 
 .shop-btn:hover {
     background: #0c6417;
@@ -51,18 +56,21 @@ body {
 
 .hero-right {
     flex: 1;
-    text-align: right;
     min-width: 260px;
+    text-align: right;
+    position: relative;
+
+    display: flex;              /* NEW */
+    flex-direction: column;     /* NEW – stack image then button */
+    align-items: flex-end;      /* NEW – align both to the right */
 }
+
 
 .earth-img {
     width: 70%;
     max-width: 380px;
 }
 
-/* ============================
-   PRODUCT TITLE
-   ============================ */
 
 .products-title {
     font-size: 26px;
@@ -70,22 +78,19 @@ body {
     margin-top: 20px;
 }
 
-/* ============================
-   PRODUCT CARDS
-   ============================ */
 
 .products-row {
     display: flex;
-    flex-wrap: wrap;        /* makes them wrap instead of centering */
+    flex-wrap: wrap;      
     gap: 20px;
     padding: 20px 45px;
-    justify-content: flex-start;  /* forces first item to stay left */
+    justify-content: flex-start; 
 }
 .product-card {
     background: #fff;
     border-radius: 10px;
     padding: 12px;
-    width: 230px;            /* fixed but responsive in wrap */
+    width: 230px;    
     box-shadow: 0 0 5px rgba(0,0,0,0.15);
 }
 
@@ -113,17 +118,15 @@ body {
     color: red;
 }
 
-.add-btn {
-    width: 100%;
+
+
+.btn {
+       width: 100%;
     margin-top: 10px;
     padding: 8px 0;
     border: none;
     border-radius: 5px;
     color: white;
-    background: #c0392b;
-    cursor: pointer;
-}
-
-.add-btn.green {
     background: #0c6417;
+    cursor: pointer;
 }
