@@ -1,0 +1,144 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.products-section {
+    width: 65%; 
+}
+
+
+ .header{
+   padding: 20px;
+   margin-left: 20px;
+ }
+
+.summary-section {
+    width: 30%; 
+}
+
+
+.product-item{
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid #D4D7E3;
+    padding:15px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.product-img{
+    width:150px;
+    height: 90px;
+    border-radius: 20px;
+    background:#D9D9D9;
+    margin-right:15px;
+}
+
+.product-info{
+    flex:1;
+}
+
+.product-name{
+    color:#000000;
+    font-family: "Inter";
+    font-weight: 600;
+    margin:0;
+}
+
+.product-color{
+    color:#8897AD;
+    margin:5px 0;
+}
+
+.qty-box{
+  background-color: rgba(27, 94, 32, 0.2);
+
+    display:inline;
+    border-radius: 20px;
+    align-items:center;
+    margin:5px 0;
+}
+
+
+
+.qty-box span{
+    margin:0 10px;
+}
+
+.remove-btn{
+    background:none;
+    border:none;
+    color:red;
+    cursor:pointer;
+    font-weight: 600;
+    margin-top:5px;
+}
+
+.del-icon{
+height: 15px;
+
+}
+
+.price{
+    color:#000000;
+    font-weight:bold;
+}
+
+
+.summary-box{
+width:300px;
+padding:20px;
+background:#F5F5F5;
+border-radius:10px;
+font-family:'Inter', sans-serif;
+}
+
+
+.summary-box h3{
+margin-top:0;
+color:#000000;
+}
+
+
+.row{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+color:#000000;
+}
+
+
+.green{
+color:#1B5E20;
+}
+
+
+.total-row{
+margin-top:20px;
+font-weight:bold;
+}
+
+
+.checkout-btn{
+width:100%;
+padding:10px;
+background:#1B5E20;
+color:white;
+border:none;
+border-radius:20px;
+margin-top:20px;
+}
+
+
+.continue-btn{
+width:100%;
+padding:10px;
+background:white;
+border:1px solid #1B5E20;
+border-radius:20px;
+margin-top:15px;
+}
