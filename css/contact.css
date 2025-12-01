@@ -9,27 +9,32 @@ body {
     background-color: #ffffff;
     padding: 40px;
 }
-
-/* THREE-COLUMN LAYOUT */
 .container {
     display: flex;
     gap: 40px;
     width: 100%;
     align-items: flex-start;
 }
-
-/* Each column takes equal flexible space */
-.left-section,
-.contact-form-component,
-.faq-component {
+.contact-form-component
+{
     flex: 1;
+    padding: 25px;
+    border-radius: 8px;
+    min-width: 250px; 
 }
 
-/* ----------------------- */
-/* LEFT SECTION */
-/* ----------------------- */
+.contact-info-component,
 
-.left-section h1 {
+.faq-component {
+    flex: 1;
+    background-color: rgba(212, 215, 227, 0.1); 
+    padding: 25px;
+    border-radius: 8px;
+    min-width: 250px; 
+}
+
+
+.contact-info-component h1 {
     font-size: 40px;
     color: #000000;
     margin-bottom: 40px;
@@ -67,18 +72,13 @@ body {
 }
 
 .social-icons img {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
 }
 
-/* ----------------------- */
-/* FORM SECTION */
-/* ----------------------- */
-
-.contact-form-component {
-    background-color: rgba(217, 217, 217, 0.1);
-    padding: 25px;
-    border-radius: 8px;
+.contact-form-component form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
@@ -92,9 +92,12 @@ input,
 textarea {
     width: 100%;
     padding: 12px;
+    color: #000000;
+    background-color: #F7FBFF;
     border: 1px solid #D4D7E3;
-    border-radius: 6px;
+    border-radius: 20px;
     margin-bottom: 20px;
+    font-family: 'Inter';
     font-size: 14px;
 }
 
@@ -109,24 +112,24 @@ textarea::placeholder {
 }
 
 button {
-    width: 100%;
+    width: 70%;
     padding: 12px;
     background-color: #1B5E20;
     color: #ffffff;
     border: none;
-    border-radius: 6px;
+    border-radius: 30px;
     font-size: 16px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* ----------------------- */
-/* FAQ SECTION */
+/* RIGHT SECTION: FAQ */
 /* ----------------------- */
-
 .faq-component {
-    background-color: rgba(217, 217, 217, 0.1);
     padding: 20px;
-    border-radius: 8px;
 }
 
 .faq-component h2 {
