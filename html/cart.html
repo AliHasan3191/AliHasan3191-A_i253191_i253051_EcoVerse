@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/cart.css">
+      <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+<div class="navbar">
+
+    <div class="left-side">
+        <img src="../images/logo.png" class="logo">
+    </div>
+
+    <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="right-side">
+        <img src="../images/heart.png" class="icon">
+        <a href="cart.html">
+        <div class="cart-box">
+            <img src="../images/cart.png" class="icon">
+            <span class="cart-count">3</span>
+        </div>
+        </a>
+
+        <input type="text" placeholder="Glass Water Bottle" class="searchbox" />
+    </div>
+
+</div>
+
+
+    <h1 class="header">Cart</h1>
+
+
+<div class="container">
+   
+    <div class="products-section">
+      <div class="product-item">
+        <a href="product.html">
+    <img src="../images/bee.png" alt="product image" class="product-img">
+    </a>
+
+    <div class="product-info">
+        <p class="product-name">Bee Wax Wraps</p>
+        <p class="product-color">Color blue</p>
+<div class="qty-box">
+    <button onclick="minus()" class="qty-btn">-</button>
+    <span id="qty">2</span>
+    <button onclick="plus()" class="qty-btn">+</button>
+</div>
+
+       <button class="remove-btn">
+    <img src="../images/del.png" alt="del" class="del-icon"> Remove
+</button>
+    </div>
+
+    <p class="price">RS 149.99</p>
+</div>
+
+<div class="product-item">
+    <a href="product.html">
+    <img src="../images/brush.jpeg" alt="product image" class="product-img">
+</a>
+    <div class="product-info">
+        <p class="product-name">Wooden Brush</p>
+        <p class="product-color">Color brown</p>
+
+        <div class="qty-box">
+    <button onclick="minus2()" class="qty-btn">-</button>
+    <span id="qty2">2</span>
+    <button onclick="plus2()" class="qty-btn">+</button>
+</div>
+
+
+<button class="remove-btn">
+    <img src="../images/del.png" alt="del" class="del-icon"> Remove
+</button>
+    </div>
+
+    <p class="price">RS 149.99</p>
+</div>
+
+    </div>
+
+    <div class="summary-section">
+       <div class="summary-box">
+<h3>Order Summary</h3>
+
+
+<div class="row">
+<p>Price</p>
+<p>RS 450</p>
+</div>
+
+
+<div class="row">
+<p>Discount</p>
+<p>RS 40</p>
+</div>
+
+
+<div class="row">
+<p>Tax</p>
+<p>0%</p>
+</div>
+
+
+<div class="row">
+<p>Shipping</p>
+<p class="green">Free</p>
+</div>
+
+
+<div class="row total-row">
+<p>TOTAL</p>
+<p><strong>RS 410</strong></p>
+</div>
+
+
+<div class="row">
+<p>Estimated Delivery by</p>
+<p><strong>01 Dec, 2025</strong></p>
+</div>
+
+<a href="payment.html">
+    <button class="checkout-btn">Proceed to Checkout</button>
+</a>
+
+<a href="product.html">
+<button class="continue-btn">Continue Shopping</button>
+</a>
+</div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="footer">
+      <div class="footer2">
+        <h3>Quick links</h3>
+        <p>FAQs</p>
+        <p>Privacy Policy</p>
+        <p>Terms and conditions</p>
+        <p>Returns</p>
+      </div>
+
+      <div class="footer2">
+        <h3>Contact Us</h3>
+        <p>contact@ecoverese.com</p>
+        <p>+92 300 0000000</p>
+        <p>Islamabad G 13/2</p>
+      </div>
+
+      <div class="footer2">
+        <h3>Follow us</h3>
+        <p><img src="../images/insta2.png" class="icon2" /> Instagram</p>
+        <p><img src="../images/facebook2.png" class="icon2" /> Facebook</p>
+        <p><img src="../images/x.png" class="icon2" /> X</p>
+      </div>
+    </div>
+
+<script>
+  let qty = 2;
+
+  function plus() {
+    qty++;
+    document.getElementById("qty").innerText = qty;
+  }
+
+  function minus() {
+    if (qty > 1) {
+      qty--;
+      document.getElementById("qty").innerText = qty;
+    }
+  }
+
+
+
+
+  let qty2 = 2;
+
+  function plus2() {
+    qty2++;
+    document.getElementById("qty2").innerText = qty2;
+  }
+
+  function minus2() {
+    if (qty2 > 1) {
+      qty2--;
+      document.getElementById("qty2").innerText = qty2;
+    }
+  }
+
+
+
+</script>
+
+
+
+</div>
+
+
+
+</body>
+</html>
