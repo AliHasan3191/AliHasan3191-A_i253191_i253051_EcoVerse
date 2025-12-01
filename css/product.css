@@ -1,0 +1,139 @@
+/* product.css – beginner friendly */
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* =============================
+    PRODUCT SECTION
+============================= */
+
+.products-section {
+    padding: 20px 40px;
+}
+
+/* ====== TITLE + FILTER ====== */
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.products-title {
+    font-size: 26px;
+    margin: 0;
+}
+
+/* Filter Icon Container */
+.filter-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.filter-icon {
+    width: 22px;
+}
+
+/* Dropdown */
+.filter-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.filter-box:hover .filter-menu {
+    display: block;
+}
+
+.filter-menu p {
+    margin: 6px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* =============================
+    PRODUCT GRID
+============================= */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+
+.pimg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pname {
+    font-size: 15px;
+    margin: 8px 0 4px 0;
+}
+
+.pprice {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+.stock {
+    font-size: 13px;
+    margin-top: 3px;
+    color: green;
+}
+
+/* Red text for out of stock */
+.stock.red {
+    color: red;
+}
+
+/* Add to cart buttons */
+.add-btn {
+    width: 100%;
+    border: none;
+    padding: 8px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    background: #b33d3d; /* default red button */
+}
+
+/* Green version for available stock */
+.add-btn.green {
+    background: #0c6417;
+}
+
+/* =============================
+    RESPONSIVE
+============================= */
+
+@media (max-width: 768px) {
+    .products-section {
+        padding: 20px;
+    }
+
+    .products-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
