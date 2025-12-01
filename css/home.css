@@ -1,0 +1,132 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+     user-select: none;
+}
+
+
+.hero-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1px;
+    padding: 20px 50px 10px;
+    flex-wrap: wrap;            
+}
+
+.hero-left {
+    flex: 1;
+    min-width: 260px;
+}
+
+.hero-logo {
+    width: 230px;
+    max-width: 80%;
+}
+
+.tagline {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #0c6417;
+}
+
+.shop-btn {
+    display: inline-block;
+    margin-right: 125px;
+    padding: 10px 25px;
+    border: 2px solid #0c6417;
+    border-radius: 20px;
+    color: #0c6417;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.right-btn {
+    margin-top: 15px; 
+    align-self: flex-end;       
+}
+
+
+.shop-btn:hover {
+    background: #0c6417;
+    color: white;
+}
+
+.hero-right {
+    flex: 1;
+    min-width: 260px;
+    text-align: right;
+    position: relative;
+
+    display: flex;              
+    flex-direction: column;   
+    align-items: flex-end;      
+}
+
+
+.earth-img {
+    width: 70%;
+    max-width: 380px;
+}
+
+
+.productstile {
+    font-size: 26px;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+
+.products{
+    display: flex;
+    flex-wrap: wrap;      
+    gap: 20px;
+    padding: 20px 45px;
+    justify-content: flex-start; 
+}
+.card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    width: 230px;    
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+.pimg {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.pname {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.pprice {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.stock {
+    font-size: 13px;
+    color: green;
+}
+
+.stock.red {
+    color: red;
+}
+
+
+
+.btn {
+       width: 100%;
+    margin-top: 10px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: #0c6417;
+    cursor: pointer;
+}

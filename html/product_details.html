@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="\css\product_detail.css">
+       <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+</head>
+<body>
+<div id = "for-opacity" >
+<div class="navbar">
+
+    <div class="left-side">
+        <img src="../images/logo.png" class="logo">
+    </div>
+
+    <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <div class="right-side">
+        <img src="../images/heart.png" class="icon">
+        <a href="cart.html">
+        <div class="cart-box">
+            <img src="../images/cart.png" class="icon">
+            <span class="cart-count">3</span>
+        </div>
+        </a>
+
+        <input type="text" placeholder="Glass Water Bottle" class="searchbox" />
+    </div>
+
+</div>
+
+<div class="container">
+
+    <div class="left-side">
+        <img src="../images/brushes.jpg" class="main-img">
+
+        <div class="small-img-row">
+            <a href="product.html">
+            <img src="../images/bowl.jpg" class="small-img">
+            </a>
+<a href="product.html">
+            <img src="../images/sponge.jpg" class="small-img">
+            </a>
+<a href="product.html">
+            <img src="../images/straw.jpg" class="small-img">
+            </a>
+<a href="product.html">
+            <img src="../images/bottle.jpg" class="small-img">
+            </a>
+
+        </div>
+    </div>
+
+    <div class="right-side-p">
+        <h2>Bamboo Brushes</h2>
+        <p class="category">Category: Daily product</p>
+        <p class="price">Price: 200 PKR</p>
+        <p class="stock">Stock: </p>
+        <p class="available">Available </p>
+        <p class="desc">
+         Start your day the sustainable way with our EcoSmile Bamboo Toothbrush — designed to keep your teeth clean and the planet green. Made from 100% biodegradable bamboo, this toothbrush is a natural, eco-friendly alternative to plastic brushes. The soft, BPA-free bristles are gentle on your gums while providing an effective deep clean.</p>
+
+       <div class="qty-row">
+    <span onclick="minus()" class="qty-number">-</span>
+    <span id="change" class="qty-number">2</span>
+    <span onclick="plus()" class="qty-number">+</span>
+</div>
+
+<br>
+<a href="cart.html">
+        <button class="add">Add to Cart</button>
+        </a>
+        <button onclick="changebox()" class="bulk">Bulk Order</button>
+
+    </div>
+
+    
+</div>
+<div class="reviews-specs-container">
+    <div class="reviews-section">
+        <h2>Reviews</h2>
+
+  
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-user">
+                    <img src="../images/p1.png" alt="User image">
+                    <div>
+                        <h4>irtaza</h4>
+                        <span class="date">15/11/2025</span>
+                    </div>
+                </div>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <p class="review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sequi, hic, vel reprehenderit distinctio itaque esse praesentium eligendi est eaque quae aliquid mollitia modi voluptas culpa repellendus consequatur nobis error!
+            </p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <div class="review-user">
+                    <img src="../images/p2.png" alt="User image">
+                    <div>
+                        <h4>Ali</h4>
+                        <span class="date">13/11/2025</span>
+                    </div>
+                </div>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <p class="review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, enim totam distinctio qui at cum velit, incidunt dolorem rem ipsam blanditiis ullam dolore. Aperiam rerum necessitatibus repellendus similique quam hic?
+            </p>
+        </div>
+    </div>
+
+    <div class="spec-section">
+        <h2>Specifications</h2>
+
+        <div class="spec-row">
+            <span class="spec-title">Material</span>
+            <span class="spec-value">Wood (bamboo)</span>
+        </div>
+
+        <div class="spec-row">
+            <span class="spec-title">Weight</span>
+            <span class="spec-value">50g</span>
+        </div>
+
+        <div class="spec-row">
+            <span class="spec-title">Size</span>
+            <span class="spec-value">12 × 1 cm</span>
+        </div>
+
+        <div class="spec-row">
+            <span class="spec-title">Color</span>
+            <span class="spec-value">Brown</span>
+        </div>
+    </div>
+</div>
+
+<h2 class="product-details">Product Details</h2>
+<div class="container">
+
+
+
+     <div class="card">
+          <a href="product_details.html">
+            <img src="../images/lamp.jpg" class="pimg" />
+          </a>
+          <h3>Solar Charged Lamp</h3>
+          <p>Price: 57 PKR</p>
+          <p class="outstock">Out of Stock</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="product_details.html">
+            <img src="../images/bowl.jpg" class="pimg" />
+          </a>
+          <h3>Coconut Bowl</h3>
+          <p>Price: 130 PKR</p>
+          <p class="stock">Stock Available</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="product_details.html">
+            <img src="../images/soap.jpg" class="pimg" />
+          </a>
+          <h3>Coconut Soap</h3>
+          <p>Price: 180 PKR</p>
+          <p class="outstock">Out of Stock</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="product_details.html">
+            <img src="../images/wrap.jpg" class="pimg" />
+          </a>
+          <h3>Bamboo Cutlery Travel Set</h3>
+          <p>Price: 20 PKR</p>
+          <p class="stock">Stock Available</p>
+          <a href="cart.html">
+            <button class="btn">Add to Cart</button>
+          </a>
+        </div>
+</div>
+
+
+
+
+    <div class="footer">
+      <div class="footer2">
+        <h3>Quick links</h3>
+        <p>FAQs</p>
+        <p>Privacy Policy</p>
+        <p>Terms and conditions</p>
+        <p>Returns</p>
+      </div>
+
+      <div class="footer2">
+        <h3>Contact Us</h3>
+        <p>contact@ecoverese.com</p>
+        <p>+92 300 0000000</p>
+        <p>Islamabad G 13/2</p>
+      </div>
+
+      <div class="footer2">
+        <h3>Follow us</h3>
+        <p><img src="../images/insta2.png" class="icon2" /> Instagram</p>
+        <p><img src="../images/facebook2.png" class="icon2" /> Facebook</p>
+        <p><img src="../images/x.png" class="icon2" /> X</p>
+      </div>
+    </div>
+
+
+</div>
+
+</div>
+<div id="box2" class="bulk-container">
+
+    <span class="close-x" onclick="closeBulk()">×</span>
+
+    <h2>Bulk Order</h2>
+
+    <div class="input-row">
+        <label>Number of pieces:</label>
+        <input type="number" placeholder="200">
+    </div>
+
+    <div class="input-row">
+        <label>Pieces per box</label>
+        <input type="number" placeholder="20">
+    </div>
+
+    <div class="summary-box">
+        <h3>Order Summary</h3>
+
+        <div class="summary-row">
+            <span>Price</span>
+            <span>RS 10000</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Discount</span>
+            <span>10%</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Tax</span>
+            <span>0%</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Shipping</span>
+            <span class="green">Free</span>
+        </div>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <span>RS 9000</span>
+        </div>
+
+        <a href="payment.html">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </a>
+    </div>
+</div>
+
+
+<script src = "../js/pdct.js"  ></script>
+
+</body>
+</html>

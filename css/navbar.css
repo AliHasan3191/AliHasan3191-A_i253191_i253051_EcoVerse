@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0c6417;
+  
+    padding: 10px 25px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 22px;
+    cursor: pointer;
+}
+
+.cart-box {
+    position: relative;
+    margin-top: 5px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.searchbox {
+  
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 160px;
+}
